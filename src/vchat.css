@@ -1,0 +1,360 @@
+.transition-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.icontainer{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: bisque;
+  position: absolute;
+}
+
+.container{
+  display: inline-flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 246, 235);
+  overflow: hidden;
+}
+
+.chatheader{
+  float: right;
+}
+
+.initialdiv{
+  width: 100%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+
+}
+
+.ihead{
+  color: #000000;
+}
+
+.ichat-input-form{
+  width: 50%;
+  height: 20vh;
+}
+
+.ivinput{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.vinput {
+  resize: none;
+  min-height: 40px; 
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.note-container{
+  height: 100vh;
+  width: 20%;
+  background-color: bisque;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transition: all 1s ease;
+}
+
+.context{
+  margin-top: 40%;
+  display: grid;
+  justify-items: center;
+}
+
+.contextbut{
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: bisque;
+  margin-bottom: 2%;
+
+}
+
+.contextname{
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  background-color: cornsilk;
+  margin-bottom: 2%;
+}
+
+.contextlists{
+  width: 100%;
+  height: 25px;
+  background-color: bisque;
+  border-color: transparent;
+  border-radius: 30%;
+  display: flex;
+  justify-content: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+
+.contextlists:hover{
+  cursor: pointer;
+  font-size: larger;
+}
+
+
+.contextbut:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.chat-container {
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  animation: slideIn 0.5s ease-in-out;
+
+}
+
+.wiki-container{
+  width:20%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-width: 0 1px;
+}
+
+.slide-out {
+  transform: translateX(-100%);  
+}
+
+.slider{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  background-color: bisque;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+
+.slider:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.notes{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+
+.infolables{
+  font-size: 90%;
+  font-weight: 600;
+  text-align: left;
+  margin: 2px;
+
+}
+
+.infolables:hover{
+  cursor: pointer;
+}
+
+.title{
+  top: 50%;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.titleh{
+  color: #000000;
+  font-size: 100%;
+  width: 80%;
+}
+
+.titlep{
+  overflow-wrap: normal;
+  color: #6e9fc9;
+}
+
+.chat-messages{
+  display: table-column;
+  position: relative;
+  height: 95%;
+  overflow-y: scroll;
+  margin-left: 18%;
+  margin-right: 12%;
+}
+
+.chat-messages::-webkit-scrollbar {
+  display: none;
+}
+
+.userchat{
+  justify-content: right;
+  display: flex;
+}
+
+.botchat{
+  justify-content: left;
+  display: flex;
+}
+
+.clogo{
+  height: 30px;
+  width: 30px;
+}
+
+
+.message {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.user {
+  background-color: #ffffff; 
+  text-align: start;
+}
+
+.bot{
+  background-color: #ffffff; 
+  text-align: left;
+}
+
+.chat-input-form{
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  height: 5%;
+  margin-bottom: 2vh;
+  margin-left: 22%;
+  margin-right: 15%;
+}
+
+.vinput {
+  width: 90% ;
+  height: 100%;
+  border: solid;
+  border-radius: 20px;
+
+}
+
+.vbut{
+  background-color: #ffffff;
+  width: 7.5%;
+  border-radius: 20px;
+  border: solid;
+}
+
+.vbut:hover{
+  transform: scale(0.90);
+}
+
+.vbut:disabled{
+  transform: scale(1);
+}
+
+.senlogo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  overflow: hidden;
+}
+
+.wiki{
+  height: 50%;
+  font-size: 8px;
+  color: black;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.titlew{
+  overflow-wrap: normal;
+  color: #043b6b;
+  font-size: large;
+}
+
+.session{
+  height: 50%;
+  color: #000000;
+  font-size: 8px;
+  display: grid;
+}
+
+.contextgrid{
+  background-color: cornsilkft ;
+  border: dashed ;
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.contextgrid:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.contextgrid:disabled{
+  transform: scale(1.00);
+}
+.contexthead{
+  margin-bottom: 0%;
+  height:10%;
+}
+
+.popupbox{
+  z-index: 5;
+  background-color: rgb(255, 250, 244);
+  width: 25%;
+  height: 15%;
+  border-radius: 20px;
+  margin-bottom: 50%;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

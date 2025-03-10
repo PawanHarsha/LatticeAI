@@ -1,0 +1,41 @@
+.signinpage{
+    background-color: rgb(148, 186, 186);
+    height: 100vh;
+    display: flex;
+}
+
+.loginform{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    align-items: center;
+    display: flex;
+
+}
+.loginput{
+    height: 25px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 20%;
+}
+
+.vbut2{
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: aliceblue;
+}
+
+.vbut2:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.anim{
+    width: 50%;
+    float: left;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+

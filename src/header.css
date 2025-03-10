@@ -1,0 +1,54 @@
+.logbuts{
+    margin: 2px;
+}
+
+.logdialog{
+    border-radius: 20px;
+}
+
+.header{
+    background: transparent;
+    width: fit-content;
+    height: fit-content;
+}
+
+.headlogo{
+    height: auto;
+    width: 42px;
+    margin: 2px;
+    overflow: hidden;
+  }
+  
+.headlogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.titleheader{
+    display: flex;
+    float: left;
+    height: 7vh;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 150px;
+    z-index: 2;
+}
+
+.tithdrheading{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 1%;
+    height: 100%;
+    margin-top: 10%;
+  }
+
+.chlogo{
+    height: 100%;
+    width: 40px;
+    margin: 1%;
+  }
+  
+.chlogo:hover{
+    transform: scale(1.1);
+  }
+  

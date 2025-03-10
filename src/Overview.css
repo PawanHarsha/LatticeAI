@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+}
+
+.app-logo {
+  font-family: 'Arial', sans-serif;
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00245f;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #555;
+}
+
+.tab.active {
+  background-color: #f26d6d;
+  font-weight: bold;
+  border-bottom: 3px solid #c53d3d;
+}
+
+.gap{
+  background-color: #000000;
+  height: 5vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.filter-search-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 25%;
+}
+
+.filter-search-container input:last-child {
+  margin-right: 1500px;
+}
+
+.filter-search-container input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+.filter-search-container input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+table th {
+  background-color: #343a40;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table td {
+  padding: 8px;
+  text-align: left;
+}
+
+td:last-child{
+  max-width: 300px; 
+  word-wrap: break-word;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .active a {
+  background-color: #0056b3;
+}
+
+.pagination a:hover {
+  background-color: #0056b3;
+}
+
